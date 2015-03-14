@@ -14,4 +14,4 @@ RUN \
   chef gem install --no-ri --no-rdoc knife-solo
 
 # RUN locale-gen en_US.UTF-8
-RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
+# RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
