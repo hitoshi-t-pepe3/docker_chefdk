@@ -10,7 +10,7 @@ RUN yum install -y \
   && yum clean all 
 
 RUN \
-  curl -L https://www.opscode.com/chef/install.sh | sudo bash -s -- -P chefdk && \
+  curl -L https://www.opscode.com/chef/install.sh | bash -s -- -P chefdk && \
   chef gem install --no-ri --no-rdoc knife-solo
 
 RUN locale-gen en_US.UTF-8
